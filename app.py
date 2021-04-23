@@ -45,7 +45,7 @@ def main():
    <div class="col-md-12">
    <center><p style="font-size:40px;color:white;margin-top:10px;">Poornima Institute of Engineering & Technology</p></center> 
    <center><p style="font-size:30px;color:white;margin-top:10px;">Department of Computer Engineering</p></center> 
-   <center><p style="font-size:25px;color:white;margin-top:10px;"Machine Learning Lab Experiment</p></center> 
+   <center><p style="font-size:25px;color:white;margin-top:10px;"ML Lab Experiment</p></center> 
    </div>
    </div>
    </div>
@@ -55,10 +55,10 @@ def main():
     
   
     Sex = st.number_input('Insert sex')
-    Age = st.number_input('Insert a Age',18,60)
-    SibSp = st.number_input('Insert a SibSp',0,10)
-    Parch = st.number_input('Insert a Parch',1,10)
-    Pclass = st.number_input('Insert a Pclass',18,60)
+    Age = st.number_input('Insert Age',18,60)
+    SibSp = st.number_input('Insert SibSp',0,10)
+    Parch = st.number_input('Insert Parch',1,10)
+    Pclass = st.number_input('Insert Pclass',18,60)
    
     Fare = st.number_input("Insert Fare",1,15000)
     resul=""
