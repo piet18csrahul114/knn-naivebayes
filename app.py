@@ -22,9 +22,9 @@ def predict_note_authentication(Age,SibSp,Parch,Sex,Fare,Pclass):
  output= model.predict(sc.transform([[Age,SibSp,Parch,Sex,Fare,Pclass]]))
  print("Passenger will die =", output)
  if output==[1]:
-  prediction="Passanger will survive"
+  prediction="Passenger will survive"
  else:
-  prediction="Passanger will die"
+  prediction="Passenger will die"
  print(prediction)
  return prediction
 
@@ -32,9 +32,9 @@ def predict_naive(Age,SibSp,Parch,Fare,Sex,Pclass):
  output= model_naive.predict(sc.transform([[Age,SibSp,Parch,Fare,Sex,Pclass]]))
  print("Passenger will die =", output)
  if output==[1]:
-   prediction="Passanger will survive"
+   prediction="Passenger will survive"
  else:
-   prediction="Passanger will die"
+   prediction="Passenger will die"
  print(prediction)
  return prediction
 def main():
@@ -51,7 +51,7 @@ def main():
    </div>
    """
     st.markdown(html_temp,unsafe_allow_html=True)
-    st.header("Passenger Will Survive Or Not Prediction using K nearest neighbor And Naive Bayes")
+    st.header("Passenger Will Survive Or Not Prediction using KNN And Naive Bayes")
     
   
     Sex = st.number_input('Insert sex')
@@ -70,7 +70,7 @@ def main():
       st.success('Model has predicted {}'.format(result))
       
     if st.button("About"):
-      st.subheader("Developed by Priyanshu Jain")
+      st.subheader("Developed by Rahul Chhablani")
       st.subheader("Department of Computer Engineering")
 
 if __name__=='__main__':
