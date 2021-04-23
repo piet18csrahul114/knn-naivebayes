@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
-model = pickle.load(open('/content/drive/My Drive/Knearestneighborclassifier.pkl', 'rb'))
-model_naive = pickle.load(open('/content/drive/My Drive/naivebayesclassifier.pkl', 'rb'))
-dataset= pd.read_csv('/content/drive/My Drive/titanic.csv')
+model = pickle.load(open('Knearestneighborclassifier.pkl', 'rb'))
+model_naive = pickle.load(open('naivebayesclassifier.pkl', 'rb'))
+dataset= pd.read_csv('titanic.csv')
 X=dataset[["Age","SibSp","Parch","Fare","Sex","Pclass"]]
 
 from sklearn.preprocessing import LabelEncoder
